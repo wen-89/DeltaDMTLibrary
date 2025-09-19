@@ -523,16 +523,17 @@ namespace WindowsApplication1
             this.textBox1.Size = new System.Drawing.Size(108, 28);
             this.textBox1.TabIndex = 17;
             this.textBox1.Text = "0";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(540, 30);
+            this.label21.Location = new System.Drawing.Point(526, 30);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(116, 18);
+            this.label21.Size = new System.Drawing.Size(143, 18);
             this.label21.TabIndex = 18;
-            this.label21.Text = "ResponseTime";
+            this.label21.Text = "MaxResponseTime";
             // 
             // Form1
             // 

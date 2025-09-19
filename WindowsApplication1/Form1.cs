@@ -242,10 +242,12 @@ namespace WindowsApplication1
 			int modbus_mode = 1; // 1:ASCII , 2:RTU
 			int status = 0;
 			int comm_type = 0; // 0:RS-232 , 1:Ethernet
+     
+            // 声明并初始化一个 double 类型的 List
+            List<double> actTime = new List<double>(new double[10000]);
 
 
-
-			switch (MBMode.SelectedIndex) // update communication params
+            switch (MBMode.SelectedIndex) // update communication params
 			{
 				case 0: //ASCII
 					data_len = 7;
@@ -301,12 +303,13 @@ namespace WindowsApplication1
 				int modbus_addr_ret = 0;
 				int modbus_func_ret = 0;
 				int sendlen = 0;
-				int i = 0;
+				int i,j = 0;
 
 				strReq = ReqData.Text;
 				string strValid = "0123456789ABCDEF";
+				
 
-				/***************************************************
+                /***************************************************
 				 ex: // input verification
 					 string str1 = "0123456789ABCDEF";
 					 string str2 = "ax";
@@ -314,7 +317,7 @@ namespace WindowsApplication1
 					 num = str1.IndexOf(str2.ToUpper()[1]); // num = -1 : illegal char
 				***************************************************/
 
-				if (strReq.Length < 4) // at least slave address and function code
+                if (strReq.Length < 4) // at least slave address and function code
 				{
 					ActStatus.Text = "Invalid Modbus Data";
 					CloseModbus(conn_num);
@@ -351,52 +354,56 @@ namespace WindowsApplication1
 						sendlen++;
 					}
 				}
-                stopwatch.Reset();
-                stopwatch.Start();
-                int req = RequestData(comm_type, conn_num, modbus_addr, modbus_func, sendbuf, sendlen);  // modbus request
-				if (req == -1)
+				for (j = 0; j < 10000; j++) // clear the rest of sendbuf
 				{
-					ActStatus.Text = "Request Failed";
-					CloseModbus(conn_num);
-					return;
-				}
-
-				int res = ResponseData(comm_type, conn_num, ref modbus_addr_ret, ref modbus_func_ret, recvbuf);  // modbus response
-                stopwatch.Stop();
-                if (res > 0)
-				{
-					strRes += modbus_addr_ret.ToString("X2");
-					strRes += modbus_func_ret.ToString("X2");
-
-					switch (modbus_func_ret)
-					{
-						case 0x01:
-						case 0x02:
-						case 0x03:
-						case 0x04:
-						case 0x11:
-						case 0x17:
-							strRes += res.ToString("X2");
-							break;
-					}
-
-					for (i = 0; i < res; i++) // recover a string from recvbuf
-					{
-						strRes += recvbuf[i].ToString("X2");
-					}
-
-                    if ((modbus_func_ret & 0x80) == 0x80)
+                    stopwatch.Reset();
+                    stopwatch.Start();
+                    int req = RequestData(comm_type, conn_num, modbus_addr, modbus_func, sendbuf, sendlen);  // modbus request
+                    if (req == -1)
+                    {
                         ActStatus.Text = "Request Failed";
-                    else
-                        ActStatus.Text = "Request Done";
-					ResData.Text = strRes;
-				}
+                        CloseModbus(conn_num);
+                        return;
+                    }
+                    int res = ResponseData(comm_type, conn_num, ref modbus_addr_ret, ref modbus_func_ret, recvbuf);  // modbus response
+                    stopwatch.Stop();
+					actTime.Add(stopwatch.Elapsed.TotalMilliseconds);
+                    if (res > 0)
+                    {
+                        strRes += modbus_addr_ret.ToString("X2");
+                        strRes += modbus_func_ret.ToString("X2");
 
-				else
-				{
-					ActStatus.Text = "No Data Received";
-					ResData.Text = "";
-				}
+                        switch (modbus_func_ret)
+                        {
+                            case 0x01:
+                            case 0x02:
+                            case 0x03:
+                            case 0x04:
+                            case 0x11:
+                            case 0x17:
+                                strRes += res.ToString("X2");
+                                break;
+                        }
+
+                        for (i = 0; i < res; i++) // recover a string from recvbuf
+                        {
+                            strRes += recvbuf[i].ToString("X2");
+                        }
+
+                        if ((modbus_func_ret & 0x80) == 0x80)
+                            ActStatus.Text = "Request Failed";
+                        else
+                            ActStatus.Text = "Request Done";
+                        ResData.Text = strRes;
+                    }
+                    else
+                    {
+                        ActStatus.Text = "No Data Received";
+                        ResData.Text = "";
+                    }
+                }
+                   
+				
 			}
 
 			else
@@ -521,9 +528,9 @@ namespace WindowsApplication1
 				}
 
 			}
-
-
-            textBox1.Text = " (" + stopwatch.ElapsedMilliseconds.ToString() + " ms)";
+            actTime.Sort();
+            actTime.Reverse();
+            textBox1.Text = " (" + actTime[0].ToString() + " ms)";
 
             CloseModbus(conn_num);
 		}
@@ -535,7 +542,12 @@ namespace WindowsApplication1
             else
                 label17.Text = "(X0.15, Y0 , M73 , D1367)";
         }
-	}
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 
 
 	
