@@ -1,0 +1,36 @@
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\bin\Debug\DMT.dll
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.Properties.Resources.resources
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.GenerateResource.Cache
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.CoreCompileInputs.cache
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.csprojAssemblyReference.cache
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\DMT.dll
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\mscorlib.dll
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\zh-CHS\mscorlib.resources.dll
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\sortkey.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\sorttbls.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\big5.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\bopomofo.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\ksc.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\prc.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\prcp.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\xjis.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\normidna.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\normnfc.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\normnfd.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\normnfkc.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\bin\Debug\normnfkd.nlp
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.AssemblyReference.cache
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.Properties.Resources.resources
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.GenerateResource.cache
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsA.E966EA42.Up2Date
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\Program Files (x86)\Delta Industrial Automation\Library\DMT 2.6\Examples\Example_C#\WindowsApplication1\obj\Debug\WindowsApplication1.pdb

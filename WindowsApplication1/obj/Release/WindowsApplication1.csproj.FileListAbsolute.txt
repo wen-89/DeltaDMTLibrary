@@ -1,0 +1,9 @@
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\bin\Release\DMT.dll
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\bin\Release\WindowsApplication1.exe
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\bin\Release\WindowsApplication1.pdb
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Release\WindowsApplication1.Form1.resources
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Release\WindowsApplication1.Properties.Resources.resources
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Release\WindowsApplication1.csproj.GenerateResource.cache
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Release\WindowsApplication1.csproj.CoreCompileInputs.cache
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Release\WindowsApplication1.exe
+D:\SourceCode\DMT\DMT Programming Guide\Examples\Example_C#\WindowsApplication1\obj\Release\WindowsApplication1.pdb
